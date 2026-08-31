@@ -1,4 +1,11 @@
 {
+  "name": "Pet-Zila",
+  "version": "1.0.0",
+  "description": "Pet_Zila Adoção com Tailwind CSS",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --minify"
+  },
   "devDependencies": {
     "tailwindcss": "^3.4.19"
   }

@@ -3,63 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formativa - Pet Zila</title>
-    <link rel="stylesheet" href="src/output.css" />
+    <title>Pet Zila - Adoção de Pets</title>
+    <link rel="stylesheet" href="./src/output.css" />
   </head>
 
-  <body>
-    <header class="bg-blue-500">
-      <h1>Pet Zila</h1>
-      <p>Leticia Roberta O liveira Souto - Paula Sbrissa Gianotto</p>
+  <body class="bg-amber-50 text-stone-800 min-h-screen flex flex-col justify-between">
+    <!-- Cabeçalho Amarelo Pastel -->
+    <header class="bg-amber-200 text-amber-950 py-6 text-center shadow-sm">
+      <h1 class="font-bold text-3xl">Pet Zila</h1>
+      <p class="text-sm font-medium opacity-90 mt-1">Leticia Roberta Oliveira Souto - Paula Sbrissa Gianotto</p>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4">
-      <h2>Escolha seu novo amiguinho Canino</h2>
+    <main class="max-w-6xl mx-auto px-4 py-8 w-full flex-1">
+      <h2 class="text-center font-bold text-amber-950 mb-8 text-2xl">Escolha seu novo amiguinho Canino</h2>
 
-      <section id="caninos">
-        <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <img src="src\img\fera.jpg" alt="Cachorro caramelo" />
-          <p>Nome: Fera</p>
-          <p>Sexo: Femea</p>
-          <p>Espécie: Canina</p>
-          <p>Porte: Médio</p>
-          <p>Raça: Vira-lata</p>
-          <p>Idade: 3 anos</p>
+      <!-- Container principal dos cartões em Grid -->
+      <section id="caninos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Pet 1 -->
+        <article class="card-animal bg-white p-5 rounded-2xl border border-amber-100 shadow-sm hover:shadow-md transition-all flex flex-col cursor-pointer" data-nome="Fera" data-especie="Canina" data-raca="Vira-lata" data-idade="3 anos">
+          <img src="src/img/fera.jpg" alt="Cachorro caramelo" class="w-full h-48 object-cover rounded-xl mb-3" />
+          <h3 class="font-bold text-xl text-amber-950 mb-2">Fera</h3>
+          <p class="text-sm text-stone-600"><strong>Sexo:</strong> Fêmea</p>
+          <p class="text-sm text-stone-600"><strong>Espécie:</strong> Canina</p>
+          <p class="text-sm text-stone-600"><strong>Porte:</strong> Médio</p>
+          <p class="text-sm text-stone-600"><strong>Raça:</strong> Vira-lata</p>
+          <p class="text-sm text-stone-600 mb-4"><strong>Idade:</strong> 3 anos</p>
+          <button class="mt-auto w-full bg-amber-200 hover:bg-amber-300 text-amber-950 font-bold py-2 rounded-xl transition">Adotar Fera</button>
         </article>
 
-        <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <img src="src\img\bethoven.jpg" alt="Cachorro preto e branco" />
-          <p>Nome: Bethoven</p>
-          <p>Sexo: Macho</p>
-          <p>Espécie: Canina</p>
-          <p>Porte: Médio</p>
-          <p>Raça: Boder Colie</p>
-          <p>Idade: 2 anos</p>
+        <!-- Pet 2 -->
+        <article class="card-animal bg-white p-5 rounded-2xl border border-amber-100 shadow-sm hover:shadow-md transition-all flex flex-col cursor-pointer" data-nome="Bethoven" data-especie="Canina" data-raca="Border Collie" data-idade="2 anos">
+          <img src="src/img/bethoven.jpg" alt="Cachorro preto e branco" class="w-full h-48 object-cover rounded-xl mb-3" />
+          <h3 class="font-bold text-xl text-amber-950 mb-2">Bethoven</h3>
+          <p class="text-sm text-stone-600"><strong>Sexo:</strong> Macho</p>
+          <p class="text-sm text-stone-600"><strong>Espécie:</strong> Canina</p>
+          <p class="text-sm text-stone-600"><strong>Porte:</strong> Médio</p>
+          <p class="text-sm text-stone-600"><strong>Raça:</strong> Border Collie</p>
+          <p class="text-sm text-stone-600 mb-4"><strong>Idade:</strong> 2 anos</p>
+          <button class="mt-auto w-full bg-amber-200 hover:bg-amber-300 text-amber-950 font-bold py-2 rounded-xl transition">Adotar Bethoven</button>
         </article>
 
-        <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <img src="src\img\rosalvo.jpg.avif" alt="Cachorro preto e marrom" />
-          <p>Nome: Rosalvo</p>
-          <p>Sexo: Macho</p>
-          <p>Espécie: Canina</p>
-          <p>Porte: Pequeno</p>
-          <p>Raça: Pinscher</p>
-          <p>Idade: 1 ano</p>
+        <!-- Pet 3 -->
+        <article class="card-animal bg-white p-5 rounded-2xl border border-amber-100 shadow-sm hover:shadow-md transition-all flex flex-col cursor-pointer" data-nome="Rosalvo" data-especie="Canina" data-raca="Pinscher" data-idade="1 ano">
+          <img src="src/img/rosalvo.jpg.avif" alt="Cachorro preto e marrom" class="w-full h-48 object-cover rounded-xl mb-3" />
+          <h3 class="font-bold text-xl text-amber-950 mb-2">Rosalvo</h3>
+          <p class="text-sm text-stone-600"><strong>Sexo:</strong> Macho</p>
+          <p class="text-sm text-stone-600"><strong>Espécie:</strong> Canina</p>
+          <p class="text-sm text-stone-600"><strong>Porte:</strong> Pequeno</p>
+          <p class="text-sm text-stone-600"><strong>Raça:</strong> Pinscher</p>
+          <p class="text-sm text-stone-600 mb-4"><strong>Idade:</strong> 1 ano</p>
+          <button class="mt-auto w-full bg-amber-200 hover:bg-amber-300 text-amber-950 font-bold py-2 rounded-xl transition">Adotar Rosalvo</button>
         </article>
 
-        <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <img src="src\img\mel.jpg" alt="Cachorro branco" />
-          <p>Nome: Mel</p>
-          <p>Sexo: Femea</p>
-          <p>Espécie: Canina</p>
-          <p>Porte: Grande</p>
-          <p>Raça: Vira-lata</p>
-          <p>Idade: 4 ano</p>
+        <!-- Pet 4 -->
+        <article class="card-animal bg-white p-5 rounded-2xl border border-amber-100 shadow-sm hover:shadow-md transition-all flex flex-col cursor-pointer" data-nome="Mel" data-especie="Canina" data-raca="Vira-lata" data-idade="4 anos">
+          <img src="src/img/mel.jpg" alt="Cachorro branco" class="w-full h-48 object-cover rounded-xl mb-3" />
+          <h3 class="font-bold text-xl text-amber-950 mb-2">Mel</h3>
+          <p class="text-sm text-stone-600"><strong>Sexo:</strong> Fêmea</p>
+          <p class="text-sm text-stone-600"><strong>Espécie:</strong> Canina</p>
+          <p class="text-sm text-stone-600"><strong>Porte:</strong> Grande</p>
+          <p class="text-sm text-stone-600"><strong>Raça:</strong> Vira-lata</p>
+          <p class="text-sm text-stone-600 mb-4"><strong>Idade:</strong> 4 anos</p>
+          <button class="mt-auto w-full bg-amber-200 hover:bg-amber-300 text-amber-950 font-bold py-2 rounded-xl transition">Adotar Mel</button>
         </article>
+
       </section>
     </main>
 
-    <footer>
+    <footer class="text-center text-xs text-amber-900/60 py-6 border-t border-amber-100">
       <small>Formativa 1 · Pet Zila · 31.08.2026</small>
     </footer>
 
